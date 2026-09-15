@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GoWandria — Find somewhere you'll love</title>
+  <meta name="description" content="Discover Bali, Cancun, Miami, London and Goa by mood, travel style and the kind of trip you need right now.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="index.html">Go<span>Wandria</span><b>✦</b></a><nav><a href="#wander">Explore</a><a href="#moods">Travel ideas</a><a href="#matcher">Find my trip</a></nav><a class="nav-cta" href="#matcher">Surprise me ✨</a></header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow">YOUR NEXT FAVORITE PLACE IS OUT THERE</div><h1>Where could you<br><em>be instead?</em></h1><p>Tell us what you're craving — sunshine, culture, food, a little romance — and wander somewhere that feels right.</p><div class="mood-row"><button data-mood="beach">🌴 I need a beach</button><button data-mood="romance">💕 Take us somewhere romantic</button><button data-mood="food">🍜 Feed me</button><button data-mood="culture">🏛️ I want culture</button><button data-mood="energy">🎉 Somewhere alive</button></div><a class="primary" href="#wander">Start wandering <span>→</span></a></div>
+  <div class="hero-art"><div class="sun"></div><figure class="postcard p1"><img src="https://images.unsplash.com/photo-1533669955142-6a73332af4db?auto=format&fit=crop&w=1000&q=85" alt="Tropical Bali landscape"><figcaption>BALI <span>slow mornings, big adventures</span></figcaption></figure><figure class="postcard p2"><img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=85" alt="London"><figcaption>LONDON</figcaption></figure><div class="stamp">GO<br>WANDER<br>✦</div></div>
+</section>
+<section class="ticker"><span>BEACH DAYS ☀</span><span>GOOD FOOD 🍋</span><span>NEW STREETS ✦</span><span>SUNSET PLANS 🌅</span><span>BIG STORIES ♥</span></section>
+<section id="wander" class="section"><div class="section-head"><div><div class="eyebrow coral">FIVE PLACES TO START</div><h2>Right now, we're<br><em>dreaming of…</em></h2></div><p>Not a ranking. Not a checklist. Just five wonderfully different places to start exploring.</p></div>
+<div class="destination-grid">
+<a class="destination bali tall" href="destination.html?place=bali"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85" alt="Bali"><div><small>INDONESIA</small><h3>Bali</h3><p>Temples, tropical mornings & ridiculous sunsets.</p><span>Culture · Nature · Romance</span></div></a>
+<a class="destination london" href="destination.html?place=london"><img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1000&q=85" alt="London"><div><small>UNITED KINGDOM</small><h3>London</h3><p>Come hungry. Leave with 30,000 steps.</p></div></a>
+<a class="destination cancun" href="destination.html?place=cancun"><img src="https://images.unsplash.com/photo-1552074284-5e88ef1aef18?auto=format&fit=crop&w=1000&q=85" alt="Cancun"><div><small>MEXICO</small><h3>Cancún</h3><p>That water really is that blue.</p></div></a>
+<a class="destination miami wide" href="destination.html?place=miami"><img src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=1200&q=85" alt="Miami"><div><small>USA</small><h3>Miami</h3><p>Sunshine with an attitude.</p></div></a>
+<a class="destination goa" href="destination.html?place=goa"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=85" alt="Goa"><div><small>INDIA</small><h3>Goa</h3><p>Beach days with a little soul.</p></div></a>
+</div></section>
+<section id="moods" class="moods"><div class="eyebrow">CHOOSE BY FEELING</div><h2>What do you need<br><em>from this trip?</em></h2><div class="mood-cards"><article><b>01</b><span>🌊</span><h3>Switch off</h3><p>Warm water, slow lunches, nowhere urgent to be.</p><a href="destination.html?place=cancun">Cancún · Bali · Goa →</a></article><article><b>02</b><span>💘</span><h3>Fall in love</h3><p>Beautiful dinners, sunsets and somewhere worth lingering.</p><a href="destination.html?place=bali">Bali · London · Cancún →</a></article><article><b>03</b><span>🎨</span><h3>Feel inspired</h3><p>Art, history, neighborhoods and stories you take home.</p><a href="destination.html?place=london">London · Miami · Bali →</a></article><article><b>04</b><span>⚡</span><h3>Feel alive</h3><p>Music, food, late nights and a packed camera roll.</p><a href="destination.html?place=miami">Miami · London · Goa →</a></article></div></section>
+<section id="matcher" class="matcher"><div><div class="eyebrow coral">30-SECOND TRAVEL MATCH</div><h2>Still can't choose?<br><em>That's the fun part.</em></h2><p>Pick your mood and who you're taking. We'll give you three places to start dreaming about.</p></div><form id="matchForm" class="match-card"><label>1. What sounds best right now?</label><div class="choices"><input type="radio" name="vibe" value="beach" id="v1" checked><label for="v1">🌴 Beach</label><input type="radio" name="vibe" value="culture" id="v2"><label for="v2">🏛 Culture</label><input type="radio" name="vibe" value="energy" id="v3"><label for="v3">🎉 Energy</label><input type="radio" name="vibe" value="nature" id="v4"><label for="v4">🌿 Nature</label></div><label>2. Who's coming?</label><div class="choices"><input type="radio" name="party" value="solo" id="p1" checked><label for="p1">Just me</label><input type="radio" name="party" value="couple" id="p2"><label for="p2">Us two</label><input type="radio" name="party" value="family" id="p3"><label for="p3">Family</label><input type="radio" name="party" value="friends" id="p4"><label for="p4">Friends</label></div><button class="primary" type="submit">Find my places ✦</button><div id="result" class="result"></div></form></section>
+</main>
+<footer><a class="brand" href="index.html">Go<span>Wandria</span><b>✦</b></a><p>Go somewhere that makes a good story.</p><small>Static discovery prototype · 2026</small></footer>
+<script src="app.js"></script>
+</body></html>
