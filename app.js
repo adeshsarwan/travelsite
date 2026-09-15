@@ -1,0 +1,4 @@
+const matches={beach:['bali','cancun','goa'],culture:['london','bali','goa'],energy:['miami','london','cancun'],nature:['bali','goa','cancun'],romance:['bali','cancun','london'],food:['london','miami','goa']};
+const names={bali:'Bali',cancun:'Cancún',goa:'Goa',london:'London',miami:'Miami'};
+document.querySelectorAll('[data-mood]').forEach(b=>b.addEventListener('click',()=>{const key=b.dataset.mood;const target=matches[key]?.[0];if(target) location.href=`destination.html?place=${target}`}));
+const form=document.querySelector('#matchForm');if(form)form.addEventListener('submit',e=>{e.preventDefault();const vibe=new FormData(form).get('vibe');const list=matches[vibe]||matches.beach;document.querySelector('#result').innerHTML=`<strong>Your places ✨</strong><br>${list.map((x,i)=>`${i+1}. <a href="destination.html?place=${x}">${names[x]}</a>`).join('<br>')}<br><small>Static prototype match — we'll make this smarter after the design is approved.</small>`;});
